@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+.fnt-gur {
+  size: 156px !important;
+  font-family: "Tiro Gurmukhi", serif;
+}
