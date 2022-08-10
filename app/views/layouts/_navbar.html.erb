@@ -4,20 +4,22 @@
       <%= image_tag 'btn_keyboard.jpg', class: "image-logo" %>
     </div>
     <%= link_to "Chatroom", root_path, class: "item fnt-cust" %>
-    <a class="item">Features</a>
-    <a class="item">Testimonials</a>
+    <a class="item">Messages</a>
     <div class="right menu">
       <div class="ui dropdown item">
         My profile <i class="dropdown icon"></i>
         <div class="menu">
-          <%= link_to "Login", login_path, class: "item fnt-cust" %>
-          <a class="item">Edit</a>
+          <% if logged_in? %>
+            <%= link_to "Logout", logout_path, method: :delete, class: "item fnt-cust" %>
+          <% else %>
+            <%= link_to "Login", login_path, class: "item fnt-cust" %>
+          <% end %>
         </div>
       </div>
-      <div class="item">
-        <div class="ui primary button
-        ">Sign Up</div>
+      <% if !logged_in? %>
+        <%= link_to "Login", login_path, class: "item fnt-cust" %>
       </div>
-    </div>
+    <% end %>
   </div>
+</div>
 </div>

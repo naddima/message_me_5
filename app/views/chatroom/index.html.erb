@@ -1,19 +1,24 @@
 <h4 class="ui center aligned medium icon header">
-  <i class="orange comment outline icon"></i>
-  Say something
+  <i class="circular orange rocket chat icon"></i>
+  Say Something
 </h4>
 <div class="ui two column grid">
   <div class="twelve wide column">
     <div class="ui fluid raised card chatbox">
       <div class="content">
-        <div class="ui small feed">
+        <div class="ui feed">
+          <%= render @messages %>
         </div>
       </div>
       <div class="extra content">
-        <div class="field">
-          <div class="ui fluid icon input">
+        <form class="ui reply form">
+          <div class="field">
+            <div class="ui fluid icon input">
+              <input type="text" placeholder="Enter a message...">
+              <i class="bordered inverted orange edit icon"></i>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

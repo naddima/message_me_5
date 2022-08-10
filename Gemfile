@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt', '~> 3.1.18'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -55,3 +55,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'semantic-ui-sass'
 gem 'sassc', '~> 2.1.0'
 gem 'jquery-rails', '~> 4.4'
+gem 'hirb'
