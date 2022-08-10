@@ -10,3 +10,14 @@
 .chatbox {
   height: 450px;
 }
+.icon_cust {
+  background-color: #f2711c;
+  padding: 1px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.75;
+}
+.icon_cust:hover {
+  opacity: 1;
+}
